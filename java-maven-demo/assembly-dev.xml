@@ -1,0 +1,25 @@
+<assembly>
+    <id>packaging</id>
+    <formats>
+        <format>dir</format>
+        <format>tar.gz</format>
+        <format>zip</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <directory>${project.basedir}/target</directory>
+            <includes>
+                <include>java-maven-demo-1.0-SNAPSHOT.jar</include>
+            </includes>
+            <outputDirectory>./libs</outputDirectory>
+        </fileSet>
+        <fileSet>
+            <directory>${project.basedir}/target/libs</directory>
+            <includes>
+                <include>*.jar</include>
+            </includes>
+            <outputDirectory>./libs</outputDirectory>
+        </fileSet>
+    </fileSets>
+</assembly>
