@@ -1,5 +1,7 @@
 #.bin/bash
 
+echo $USER
+
 #create package file
 cd java-maven-demo
 mvn clean package
